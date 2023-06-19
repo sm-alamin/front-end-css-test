@@ -1,0 +1,83 @@
+/* Styles for the body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FDD11E;
+  }
+  
+  /* Styles for the container */
+  .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .container h1 {
+    color: #FFFFFB;
+    font-weight: bold;
+  }
+  
+  /* Styles for the emoji */
+  .emoji {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #B19215;
+    position: relative;
+    transform: rotate(-90deg);
+  }
+  
+  /* Styles for the eyes */
+  .eye {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #8A7211;
+    position: absolute;
+    top: 45px;
+  }
+  
+  .eye.left {
+    left: 40px;
+  }
+  
+  .eye.right {
+    right: 40px;
+  }
+  
+  /* Styles for the smile */
+  .smile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 0 0 #8A7211;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+  
+  /* Styles for the footer */
+  .footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #FF555A;
+  }
+  
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    transform: rotate(180deg);
+    left: calc(50% - 120px);
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 50px solid #FDD11E;
+  }
+  
